@@ -1,6 +1,6 @@
 # Proyecto del Módulo de Javascript
 
-🔗 **La temática es un E-commerce**. Deberá ser una página para una empresa que venda algún producto o grupo de productos y/o servicios.
+🔗 **La temática es un E-commerce**.
 
 ## Requisitos:
 
