@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rincón Antiguo</title>
-    <!-- <link rel="icon" href="./assets/img/logoA.ico" type="image/x-icon"> -->
     <link rel="icon" href="./assets/img/1.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
@@ -12,31 +11,34 @@
 </head>
 <body>
     <header>
-        <img  class="logo" src="./assets/img/logo_rinconA.ico" alt="logo" loading="lazy">
+        <li><a href="#portada">        <img  class="logo" src="./assets/img/logo_rinconA.ico" alt="logo" loading="lazy">
+        </a></li>
+
+
 
         <nav class="navbar">
-            <label for="checkbox-menu">
+
+            <div class="menu-label">
                 <i class="fa-solid fa-bars"></i>
-            </label>
-            <input type="checkbox" id="checkbox-menu">
+            </div>
+
             <ul class="navbar-ul">
                 <li><a href="#portada">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#muebles">Muebles</a></li>
+                <li><a href="#mueble">Muebles</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>    
             <div class="carrito-container">
                 <img class="carrito" src="./assets/img/carritoCompra.png" alt="carrito de compras" loading="lazy">
-                <span class="carrito-badge">0</span>
+                <div class="carrito-badge">0</div>
             </div>
 
 
-<!-- 
             <div class="card-carrito">
                 <h2> carrito</h2>
 
 
-            <div class="carrito_container"></div>    
+            <div class="card-container"></div>    
             
             <div class="card-total">
                 <p>Total:  <span class="total">USD 500</span></p>
@@ -46,17 +48,21 @@
                 <button class="btn-vaciar">Vaciar Carrito</button>
             </div>
 
-            </div> -->
+            </div>
+
+            <div class="overlay"></div>
 
         </nav>
     </header>
+
+    
 
 
     <main>
         <section class="portada" id="portada">
             <img src="./assets/img/imgPortada.jpg" alt="img portada" loading="lazy">
             <p>Rincón Antiguo</p>
-            <div class="portada__texto"><a href="#muebles">Ver Muebles</a></div>
+            <div class="portada__texto"><a href="#mueble">Ver Muebles</a></div>
            
         </section>
 
@@ -76,7 +82,7 @@
         </section>
 
 
-        <section class="muebles" >
+        <section class="muebles" id="mueble">
             <h1 class="title__h1">Muebles</h1>
 
             <div class="categories">
@@ -104,7 +110,7 @@
         <section class="contacto" id="contacto">
             <h1 class="title__h1">Contactanos</h1>
 
-            <div class="caja"><p>Esperamos tu mensaje!</p></div>
+            <div class="caja"> <img class="contacto__img" src="./assets/img/contacto.png"><p>Esperamos tu mensaje!</p></div>
 
             <form class="form">
                 <label class="form__label" for="nombre">Nombre:</label>
@@ -121,7 +127,7 @@
                 <div  class="form__campo">
                     <textarea id="mensaje" placeholder="Dejanos tu mensaje"></textarea>
                 </div>
-
+                <!-- agregar submit -->
                 <div  class="form__btn">
                      <button class="boton btn">Enviar</button>
                 </div>
@@ -129,12 +135,7 @@
 
         </section>
         
-        <a href="https://wa.me/541155688587" class="fab" target="_blank"></a>
-        <!-- https://api.whatsapp.com/send?phone=5455688587 -->
-
-        <!-- <a href="https://api.whatsapp.com/send?phone=5455688587" class="fab" target="_blank"></a> -->
-
-
+        <a href="https://wa.me/5491155688587" class="fab" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
     </main>

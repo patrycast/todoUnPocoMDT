@@ -8,8 +8,8 @@
     list-style: none;
     /* border:1px solid red; */
     /* font-family: ; */
-    
 }
+
 :root{
     --title_h1: 36px;
     --color_blanco:#ffffff;
@@ -22,6 +22,12 @@
     --enlace_header: 22px;
     --bg_header:  #2a2727; 
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 55px;
+  }
+
+
 /* header, */
  section, footer{
     max-width:1200px;
@@ -41,10 +47,22 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 40px;
+    padding:0 50px;
     z-index: 100;
     background-color: var(--bg_header);
+
+
+    transform: translateY(-100%);
+    opacity: 0;
+    animation: slideDown 1.5s ease-out forwards;
     
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes circle-in-hesitate {
@@ -64,10 +82,8 @@ header{
     display: flex;
     gap:20px;
     height:75px;
-    height: 100%;
     cursor: pointer;
     border-radius: 50%;
-
     animation: 3s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;   
     
 }
@@ -86,7 +102,7 @@ header{
     display:flex;
     align-items: center;
     justify-content: center;
-    gap:20px;
+    gap:20px; 
 }
 
 .navbar-ul li a{
@@ -94,19 +110,15 @@ header{
     font-weight: 900;
     font-size: var(--enlace_header);  
     background: linear-gradient(90deg, #ce8282 0%, rgb(185, 53, 53));
-
     color:transparent;
     background-clip: text;
    letter-spacing: 1.5px;
    filter: brightness(110%);
-
-
 }
 
 .navbar-ul li:hover{
     filter: brightness(150%);
     transition: .3s ease;
-
 }
 
 
@@ -140,23 +152,15 @@ header{
     font-size: 30px;
     display: none;
 }
-#checkbox-menu{
-    display: none;
-}
-
-
-
-
 
 .card-carrito{
     display: flex;
     flex-direction: column;
-    background-color:rgb(109, 50, 50);
     background-color: rgb(52, 41, 41);
 
-    min-width: 400px;
+    min-width: 380px;
     height: 100vh;
-    position: absolute;
+    position: absolute; 
     right:0px;
     top:75px;
     padding: 40px 35px;
@@ -164,10 +168,14 @@ header{
     gap:25px;
     overflow-y: scroll;
     z-index:4;
-    transform: translate(0%);
+    transform: translate(200%);
     transition: all 0.55 cubic-bezier(0.93, 0.02, 0.37);
     color:whitesmoke;
 }
+
+.card-carrito::-webkit-scrollbar {
+    display: none;
+  }
 
 .carrito-container {
     position: relative;
@@ -175,7 +183,6 @@ header{
 }
 
 .carrito{
-    /* height:27px; */
     width: 45px; 
     height: auto;
     filter: brightness(110%);
@@ -186,13 +193,11 @@ header{
     transition: .3s ease;
 }
 
-
-
 .carrito-badge {
     position: absolute;
     top: -10px;
     right: -10px;
-    background-color: rgb(151, 41, 1);
+    margin-right: 5px;
     background-color:  rgb(185, 53, 53);
     color: white;
     border-radius: 50%;
@@ -224,38 +229,69 @@ header{
     color:whitesmoke;
 }
 
+
+
+
+/* *******************************mostrar icono del menu+++++++++++++ */
+.open-menu{
+    display: flex;
+    z-index: 20;
+}
+.open-cart{
+    transform: translate(0%);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 30;
+}
+
+.overlay{
+    position: absolute;
+    top:65px;
+    left:0;
+    height:100vh;
+    width:100%;
+    /* z-index: 10; */
+    background: rgba(64, 57, 57, 0.056);
+    box-shadow:  0 8px 32px 0 rgba(31, 38, 135, 0.27);
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    z-index: 10;
+    display: none;
+
+}
+.overlayActive{
+    display: block;
+}
+
+
 @media(max-width:576px){
     .navbar ul{
-        background: white;
-        width:100%;
-        height: calc(100vh - 75px);
+        background: linear-gradient( rgb(70, 10, 10) ,#bf2f2f);
+        color:var(--color_blanco);
+        border: 2px solid firebrick;
+        height: calc(50vh - 75px);
         position: absolute;
-        top:75px;
-        left:0;
+        top:74px;
+        left:3%;
+        right: 3%;
+        width: 94%; 
+        border-top: 0;
+        border-radius:  0 0 10px 10px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         display: none;
     }
+    .navbar-ul li a{
+        color:white;
+    }
     .navbar i{
         display: block;
     }
-    #checkbox-menu:checked ~ .navbar-ul{
+    .navbar-ul.open-menu {
         display: flex;
     }
 
-
-
-    /* .portada p{
-        background: linear-gradient(#200122, #6f0000);
-        color:transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-
-    } */
-
 }
-
 
 
 /* portada */
@@ -263,7 +299,7 @@ header{
 .portada{ 
     position: relative;
     max-width: 1200px;
-    height: 450px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,9 +312,7 @@ header{
     opacity: 0.6;
     display: flex;
     width:100%;
-    height: 100%;   
-    
-    
+    height: 100%;     
 }
 
 /* portada p */
@@ -288,13 +322,26 @@ header{
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
+
     font-size: 4rem; 
     margin: 0; 
     font-family: "UnifrakturMaguntia", "cursive";
     color: white;
     text-shadow: 20px 2px 14px #080101;   
     white-space: nowrap; 
+
+    opacity: 0;
+    animation: slideDownP 2s ease-out forwards;
+
+}
     
+
+
+@keyframes slideDownP {
+to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
 }
 .portada .portada__texto{
     position: absolute; 
@@ -332,10 +379,6 @@ color: var(--color_blanco);
 }
 
 
-
-
-
-
 /* nosotros */
 .nosotros{ 
     max-width: 1200px;
@@ -350,7 +393,8 @@ color: var(--color_blanco);
     max-width: 500px;
     font-size: var(--parrafo);
     font-weight: 700;
-    text-align: justify;
+    /* text-align: justify; */
+    text-wrap: balance;
     padding:10px 0;
     line-height: 1.4;
     text-shadow: 1px 1px 1px #000000;
@@ -374,10 +418,10 @@ color: var(--color_blanco);
 .nosotros__img-a,
 .nosotros__img-b{
     width:320px;
-    height:300px;
+    max-height:300px;
     background: url("./img/nosotros.avif") no-repeat center/cover;
-    opacity: 0.4;
-    transition: opacity 0.5s ease; 
+    opacity: 0.5;
+    transition: opacity 0.6s ease; 
     border-radius: 4px;
 }
 .nosotros__img-b{
@@ -386,7 +430,7 @@ color: var(--color_blanco);
 }
 .nosotros__img-a:hover,
 .nosotros__img-b:hover{
-    opacity: 0.6;
+    opacity: 0.7;
     box-shadow: 0px 0px 13px #080101;
     
 
@@ -403,12 +447,10 @@ color: var(--color_blanco);
 /* muebles */
 
 .muebles{
-    height:auto;
-    
+    height:auto;   
 }
 
 .categories {
-    /* height: 40px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -488,8 +530,6 @@ color: var(--color_blanco);
     border:1px solid rgba(255, 0, 0, 0.388);
 
     .mueble__img{
-        /* width:85%;
-        height: 80%; */
         width:250px;
         height: 250px;
         animation: grow 2s alternate;  
@@ -499,11 +539,8 @@ color: var(--color_blanco);
         width: 100%;
         height: 100%;
         border-radius: 4px;
-        /* transition: transform 0.3s ease;  */    
-
-    }
-
-    
+         
+    }   
 }
 
 .card__muebles:hover{
@@ -512,14 +549,21 @@ color: var(--color_blanco);
 }
 
 
-.card__muebles button{
+.card__muebles .btn-carrito{
     background-color: var(--bg_header);
     padding:12px 18px; 
-    border-radius: 16px;
+    border-radius: 18px;
     border: none;
-    color: #ce8282;
-    color:white;
+    color:rgb(195, 189, 189); 
+    font-size: 11px;
+    font-weight: 700;   
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+.card__muebles .btn-carrito:hover{
+    background-color:  #393535;
+    color:rgb(216, 211, 211); 
+}
+
 .muebles_btn{
     display: flex;
     justify-content: center;
@@ -529,7 +573,7 @@ color: var(--color_blanco);
 }
 
 .muebles_btn button{
-    padding:12px 15px;
+    padding:8px 15px;
     background: #331805aa;
     color:white;
     border: 1px solid #331805aa;
@@ -571,6 +615,7 @@ color: var(--color_blanco);
     right:100px;
     top:80px;
     width:275px;
+    width: auto;
     height:40px;
     background-color: rgba(255, 166, 0, 0.673);
     transform: translateX(50%);
@@ -581,10 +626,18 @@ color: var(--color_blanco);
     font-weight: 800;
 
 }
+.caja > .contacto__img{
+    width: 27px;
+    rotate: 20deg;
+    padding-right: 5px;
+    z-index: 1;
+}
+
 .contacto p{
     font-size: 26px;
     color: var(--color_blanco);
     border-radius: 9px;
+    z-index: 4;
 }
 @keyframes aparecerDerecha {
     0% {
@@ -677,7 +730,7 @@ color: var(--color_blanco);
 
 }
 
-
+/* Ícono de WhatsApp */
 .fab {
     position: fixed;
     width: 60px;
@@ -696,15 +749,11 @@ color: var(--color_blanco);
     transition: all 0.3s ease;
     z-index: 100;
 }
-
-/* Hover en el botón flotante */
 .fab:hover {
     background-color: #128c7e;
-    transform: scale(1.1);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Ícono de WhatsApp */
 .fab i {
     color: white;
 }
@@ -729,5 +778,10 @@ color: var(--color_blanco);
     color:transparent;
     background-clip: text;
     filter: brightness(150%);
-    /* color:black ; */
 }
+
+
+
+
+
+
