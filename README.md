@@ -4,7 +4,7 @@
 
 ## Requisitos:
 
-👉 El sitio deberá ser una **landing page totalmente responsive**, en la que deberá haber:
+- [x] 👉 El sitio deberá ser una **landing page totalmente responsive**, en la que deberá haber:
 
 - Un **header**.
 - Una sección de **Hero** o portada.
@@ -14,13 +14,13 @@
 - Un **footer**.
 - Un **carrito**.
 
-👉 Deberá tener al menos una funcionalidad en la que capture datos de una parte de la página y cree un componente HTML en base a eso.
+- [x] 👉 Deberá tener al menos una funcionalidad en la que capture datos de una parte de la página y cree un componente HTML en base a eso.
 
-👉 Deberá utilizar **localStorage**, para persistir datos en el sitio.
+- [ ] 👉 Deberá utilizar **localStorage**, para persistir datos en el sitio.
 
-👉 La sección de **productos** deberá renderizarse desde **JS**.
+- [x] 👉 La sección de **productos** deberá renderizarse desde **JS**.
 
-👉 La sección de **contacto** deberá tener un formulario con **validación incluida**, mostrando tanto los errores como un mensaje de éxito si pasa las validaciones.
+- [ ] 👉 La sección de **contacto** deberá tener un formulario con **validación incluida**, mostrando tanto los errores como un mensaje de éxito si pasa las validaciones.
 
-👉 El sitio debe ser **responsivo** y tener **menú hamburguesa** (funcional, realizado con JS) en las resoluciones que corresponda.
+- [ ] 👉 El sitio debe ser **responsivo** y tener **menú hamburguesa** (funcional, realizado con JS) en las resoluciones que corresponda.
 
