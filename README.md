@@ -1,6 +1,6 @@
 # Proyecto del Módulo de Javascript
 
-🔗 **La temática es un E-commerce**.
+ **La temática es un E-commerce**.
 
 ## Requisitos:
 
