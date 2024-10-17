@@ -11,13 +11,11 @@
 </head>
 <body>
     <header>
-        <li><a href="#portada">        <img  class="logo" src="./assets/img/logo_rinconA.ico" alt="logo" loading="lazy">
+        <li><a href="#portada"> <img  class="logo" src="./assets/img/logo_rinconA.ico" alt="logo" loading="lazy">
         </a></li>
 
 
-
         <nav class="navbar">
-
             <div class="menu-label">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -35,27 +33,29 @@
 
 
             <div class="card-carrito">
-                <h2> carrito</h2>
+                <h2 class="card-carrito_title">Mi Carrito</h2>
 
 
-            <div class="card-container"></div>    
+                <div class="card-container"></div>    
             
-            <div class="card-total">
-                <p>Total:  <span class="total">USD 500</span></p>
-                
-
+                <div class="card-total">
+                    <p class="total-p">Total:  <span class="total"> </span></p>
+                </div>
+<!--             
                 <button class="btn-comprar">Comprar</button>
-                <button class="btn-vaciar">Vaciar Carrito</button>
-            </div>
-
-            </div>
-
+                <button class="btn-vaciar">Vaciar Carrito</button> -->
+                <div class="modalCart-btn">
+                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-vaciar">Vaciar Carrito</button>
+                </div>
+            
+            </div> <!-- ver si aca  -->
+        
+        <!-- o aca  -->
+        
             <div class="overlay"></div>
-
         </nav>
     </header>
-
-    
 
 
     <main>
@@ -68,7 +68,7 @@
 
 
         <section class="nosotros" id="nosotros">
-            <h1 class="title__h1">Nosotros</h1>
+            <h1 class="title__h1"> <i class="fa-solid fa-people-group"></i> Nosotros</h1>
             
             <div class="nosotros__container">
                 <div class="nosotros__img-a"></div>   
@@ -83,7 +83,7 @@
 
 
         <section class="muebles" id="mueble">
-            <h1 class="title__h1">Muebles</h1>
+            <h1 class="title__h1"> <i class="fa-solid fa-couch"></i> Muebles</h1>
 
             <div class="categories">
                 <button class="category active">Todos</button>
@@ -108,7 +108,7 @@
 
 
         <section class="contacto" id="contacto">
-            <h1 class="title__h1">Contactanos</h1>
+            <h1 class="title__h1"> <i class="fa-solid fa-envelope-open"></i> Contactanos</h1>
 
             <div class="caja"> <img class="contacto__img" src="./assets/img/contacto.png"><p>Esperamos tu mensaje!</p></div>
 
@@ -135,19 +135,22 @@
 
         </section>
         
-        <a href="https://wa.me/5491155688587" class="fab" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+        
     </main>
   
 
     <footer class="footer">
         <p class="footer_text">© Patricia Castillo - 2024. Todos los derechos reservados</p>
         
-
+        <div>
+            <a href="https://wa.me/5491155688587" class="fab" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
         
     </footer>
     
+    <div class="modal"></div>
 
     <script src="./js/main.js"></script>
     <script src="./js/data.js"></script>
