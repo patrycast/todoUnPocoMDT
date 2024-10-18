@@ -48,7 +48,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding:0 50px;
-    z-index: 100;
+    z-index: 40;
     background-color: var(--bg_header);
 
 
@@ -308,6 +308,18 @@ header{
     transition: all 0.5s ease-in;
 }  
 
+.disabled{
+    background-color: #aaaaaa;
+    color:white;
+    cursor: not-allowed;
+    border: none;
+}
+.disabled:hover{
+    background-color: #aaaaaa;
+    color:white;
+    cursor: not-allowed;
+    border: none;
+}
 
 @media(max-width:576px){
     .navbar ul{

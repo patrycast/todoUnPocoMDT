@@ -201,9 +201,19 @@ const showTotal= ()=>{
 }
 
 const renderBadge= ()=>{
-    cartBadge.textContent= cart.length
+    // cartBadge.textContent= cart.length;
+    cartBadge.textContent= cart.reduce( (acc,cur)=>
+    acc + cur.quantity,0)
 }
 
+
+const disableButton= (btn) =>{
+    if(!cart.length){
+        btn.classList.add("disabled");
+    }else{
+        btn.classList.remove("disabled");
+    }
+}
 
 
 //funcion integradora
@@ -213,6 +223,8 @@ const modifyCartState= ()=>{
     renderCart()
     showTotal()
     renderBadge()
+    disableButton(buyBtn)
+    disableButton(emptyCart)
 }
 
 const showAddModal =(msg)=>{
@@ -349,5 +361,6 @@ const init=()=>{
     productCard.addEventListener("click", controlQuantity);
     emptyCart.addEventListener("click", removerCart);
     buyBtn.addEventListener("click", finishBuy);
+    renderBadge(cart);
 }
 init()
