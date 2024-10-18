@@ -6,8 +6,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    /* border:1px solid red; */
-    /* font-family: ; */
 }
 
 :root{
@@ -258,9 +256,7 @@ header{
 }
 
 
-
-
-/* *******************************mostrar icono del menu+++++++++++++ */
+/* *********************mostrar icono del menu+++++++++++++ */
 .open-menu{
     display: flex;
 }
@@ -395,8 +391,6 @@ header{
     animation: slideDownP 2s ease-out forwards;
 
 }
-
-
     
 
 
@@ -456,7 +450,6 @@ color: var(--color_blanco);
     max-width: 500px;
     font-size: var(--parrafo);
     font-weight: 700;
-    /* text-align: justify; */
     text-wrap: balance;
     padding:10px 0;
     line-height: 1.4;
@@ -504,7 +497,6 @@ color: var(--color_blanco);
     background:none;
 }
  }
-
 
 
 /* muebles */
@@ -578,10 +570,7 @@ color: var(--color_blanco);
     font-size: 20px;
     background-color:rgba(255, 255, 255, 0.085);
 }
-.card__muebles{
-    /* width: 300px;
-    height: 330px; */
-     
+.card__muebles{  
     border: 2px solid rgba(255, 119, 0, 0.395);
     display: flex;
     flex-direction: column;
@@ -658,7 +647,7 @@ color: var(--color_blanco);
     display: none;
 }
 
-  /*---------- carrito-------------------------------- */
+  /*---------- carrito------------------ */
 .cart-prod{
     border: 0.5px solid rgb(108, 109, 106);
     border-radius: 8px;
@@ -677,17 +666,9 @@ color: var(--color_blanco);
     height: 70px;
     border-radius: 10px;
 }
-.prod-price, .prod-title,
-.prod-quantity{
-    /* padding-top:5px ; */
-}
-.prod-quantity{
-    /* margin-bottom: 10px; */
-}
-.quantity-controller{
-    /* border:1px solid rgb(239, 157, 157); */
-    border:1px solid rgb(230, 199, 199);
 
+.quantity-controller{
+    border:1px solid rgb(230, 199, 199);
     padding:0.3px 8px;
     border-radius: 7px;
     font-weight: 900;
@@ -699,7 +680,6 @@ color: var(--color_blanco);
 
 }
 .quantity-controller:hover{
- /* background: #000000; */
  border-color: rgb(138, 133, 133);
  background-color: #3f3d3d;
 }
