@@ -16,7 +16,7 @@
 
 - [x] 👉 Deberá tener al menos una funcionalidad en la que capture datos de una parte de la página y cree un componente HTML en base a eso.
 
-- [ ] 👉 Deberá utilizar **localStorage**, para persistir datos en el sitio.
+- [x] 👉 Deberá utilizar **localStorage**, para persistir datos en el sitio.
 
 - [x] 👉 La sección de **productos** deberá renderizarse desde **JS**.
 
