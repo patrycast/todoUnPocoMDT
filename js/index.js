@@ -132,7 +132,7 @@ const switchCart = () => {
         return;
     }
     overlay.classList.toggle("overlayActive")
-    console.log("overlay")
+
 }
 
 const closeMenuCart= ()=>{
