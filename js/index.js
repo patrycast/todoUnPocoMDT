@@ -18,6 +18,7 @@ const emptyCart= document.querySelector(".btn-vaciar");
 const buyBtn= document.querySelector(".btn-comprar");
 const cartBadge= document.querySelector(".carrito-badge");
 
+
 let cart= JSON.parse(localStorage.getItem("cart")) || [];
 
 const jsonCart= ()=> localStorage.setItem("cart", JSON.stringify(cart))
@@ -34,13 +35,9 @@ const createProductTemplate=(producto)=>{
                 <img src="${img}" alt="${name}">
             </div>
             <p>${name}</p>
-            <span>U$D ${price}</span>
-            <button class="btn-carrito"
-            data-id='${id}'
-            data-name='${name}'
-            data-price='${price}'
-            data-img='${img}'
-            >${txt}</button>
+            <small>${txt}</small>
+            <span>$ ${price}</span>
+
         </div>        
     </div`
 
@@ -113,15 +110,21 @@ const addFilter=(e)=>{
 
 
 
-//logica menu
+//-------------------------------------------------------------------------------------------logica menu
+// const switchMenu = () => {
+//     menu.classList.toggle("open-menu");
+//     if (cartModal.classList.contains("open-cart")) {
+//         cartModal.classList.remove("open-cart");
+//         return;
+//     }
+//     overlay.classList.toggle("overlayActive")
+// }
+
 const switchMenu = () => {
     menu.classList.toggle("open-menu");
-    if (cartModal.classList.contains("open-cart")) {
-        cartModal.classList.remove("open-cart");
-        return;
-    }
-    overlay.classList.toggle("overlayActive")
+    overlay.classList.toggle("overlayActive");
 }
+
 
 
 //  carrito
@@ -135,13 +138,22 @@ const switchCart = () => {
 
 }
 
-const closeMenuCart= ()=>{
-    if(menu.classList.contains("open-menu") || cartModal.classList.contains("open-cart")){
-        menu.classList.remove("open-menu")
-        cartModal.classList.remove("open-cart")
-        overlay.classList.remove("overlayActive")
+// ------------------------------------------------------------------------------------------------------------------
+// const closeMenuCart= ()=>{
+//     if(menu.classList.contains("open-menu") || cartModal.classList.contains("open-cart")){
+//         menu.classList.remove("open-menu")
+//         cartModal.classList.remove("open-cart")
+//         overlay.classList.remove("overlayActive")
+//     }
+// }
+
+const closeMenuCart = () => {
+    if (menu.classList.contains("open-menu")) {
+        menu.classList.remove("open-menu");
+        overlay.classList.remove("overlayActive");
     }
 }
+
 
 
 //logica carrito      <div class="prod-info">    </div>
@@ -344,23 +356,37 @@ const finishBuy= ()=>{
     )
 }
 
+// --------------------------------------------------------------------------------------------------------------
+// const init=()=>{
+//     renderProducts(appState.products[0]);
+//     showMoreBtn.addEventListener("click", showMoreProducts);
+//     categories.addEventListener("click", addFilter);
+
+//     carritoBtn.addEventListener("click", switchCart);
+//     menuBtn.addEventListener("click", switchMenu);
+//     overlay.addEventListener("click", closeMenuCart);
+//     window.addEventListener("scroll", closeMenuCart);
+
+//     muebles.addEventListener("click", addMueble);
+//     document.addEventListener("DOMContentLoaded", renderCart);
+//     productCard.addEventListener("click", controlQuantity);
+//     emptyCart.addEventListener("click", removerCart);
+//     buyBtn.addEventListener("click", finishBuy);
+//     renderBadge(cart);
+// }
 
 
-const init=()=>{
+const init = () => {
     renderProducts(appState.products[0]);
     showMoreBtn.addEventListener("click", showMoreProducts);
     categories.addEventListener("click", addFilter);
 
-    carritoBtn.addEventListener("click", switchCart);
     menuBtn.addEventListener("click", switchMenu);
     overlay.addEventListener("click", closeMenuCart);
     window.addEventListener("scroll", closeMenuCart);
 
-    muebles.addEventListener("click", addMueble);
     document.addEventListener("DOMContentLoaded", renderCart);
-    productCard.addEventListener("click", controlQuantity);
-    emptyCart.addEventListener("click", removerCart);
-    buyBtn.addEventListener("click", finishBuy);
     renderBadge(cart);
 }
+
 init()

@@ -1,83 +1,63 @@
-const text = "Agregar al Carrito";
+
 const productsData=[
     {
-        id:1, img:"./assets/img/img1.png", name:"Mesa Oval Estilo Luis XV" , Category:"mesa", price:"300",txt: text,  
+        id:1, img:"./assets/img/21.jpg", name:"Aire Acondicionado " ,txt: "2300 frigorias",  Category:"aireAcondicionado", price:"250.000", 
     },
     {
-        id:2, img:"./assets/img/img2.png", name:"Mesa Oval Estilo Art Deco", Category:"mesa", price:"400",txt: text,  
+        id:2, img:"./assets/img/20.jpg", name:"Aire Acondicionado",txt: "Especificaciones",  Category:"aireAcondicionado", price:"250.000",  
     },
     {
-        id:3, img:"./assets/img/img3.png", name:"Mesa de forma circular", Category:"mesa", price:"1000",txt: text,  
+        id:3, img:"./assets/img/18.jpg", name:"Campera de Jeans", txt: "Talle S",  Category:"camperas", price:"10.000",  
     },
     {
-        id:4, img:"./assets/img/img4.jpg", name:"Cómoda Portuguesa S. XVIII", Category:"comoda", price:"800",txt: text,  
+        id:4, img:"./assets/img/10.jpg", name:"Campera de Cuero",txt: " con cinto Talle S", Category:"camperas", price:"28.000",
     },
     {
-        id:5, img:"./assets/img/img5.jpg", name:"Mesa Colonial Antigua", Category:"mesa", price:"500",txt: text,  
+        id:5, img:"./assets/img/16.jpg", name:"Campera de Cuero",txt: " con corderito Talle S", Category:"camperas", price:"25.000", 
     },
     {
-        id:6, img:"./assets/img/img6.jpg", name:"Antigua Mesa Italiana siglo XVII", Category:"mesa", price:"500",txt: text,  
+        id:6, img:"./assets/img/3.jpg", name:"Remera Viejas Locas",txt: "pintada a mano Talle L", Category:"remera", price:"4.000",  
     },
     {
-        id:7, img:"./assets/img/img7.jpg", name:"Cómoda Secretarie Siglo XVIII", Category:"comoda", price:"1200",txt: text,  
+        id:7, img:"./assets/img/1.jpg", name:"Remera PR",txt: "pintada a mano Talle S", Category:"remera", price:"3.000", 
     },
     {
-        id:8, img:"./assets/img/img8.jpg", name:"Cómoda Francesa Estilo Transición", Category:"comoda", price:"850",txt: text,  
+        id:8, img:"./assets/img/2.jpg", name:"Remera INDIO",txt: "pintada a mano Talle S", Category:"remera", price:"2.800",  
     },
     {
-        id:9, img:"./assets/img/img9.jpg", name:"Sofá Chesterfield Estilo Victoriana", Category:"sofa", price:"1400",txt: text,  
+        id:9, img:"./assets/img/5.jpg", name:"Remera Rolling Stone",txt: "pintada a mano Talle S",  Category:"remera", price:"2.800",
     },
     {
-        id:10, img:"./assets/img/img10.jpg", name:"Escritorio Estilo Ingles Eduardino ", Category:"escritorio", price:"2000",txt: text,  
+        id:10, img:"./assets/img/6.jpg", name:"Remera Rolling Stone",txt: " Talle S", Category:"remera", price:"3-000", 
     },
     {
-        id:11, img:"./assets/img/img11.jpg", name:"Sillas Lusa Siglo XVI", Category:"silla", price:"500",txt: text,  
+        id:11, img:"./assets/img/15.jpg", name:"chop Don Osvaldo",txt: "Tallado a mano", Category:"chop", price:"2.500", 
     },
     {
-        id:12, img:"./assets/img/img12.jpg", name:"Sillones Franceses Estilo Regence", Category:"sillones", price:"800",txt: text,  
+        id:12, img:"./assets/img/chop4.jpg", name:"chop La Renga",txt: "Tallado a mano", Category:"chop", price:"2.500", 
     },
     {
-        id:13, img:"./assets/img/img13.jpg", name:"Sillones Pimonteses siglo XVII", Category:"sillones", price:"400",txt: text,  
+        id:13, img:"./assets/img/17.jpg", name:"chop PR",txt: "Tallado a mano", Category:"chop", price:"2.500", 
     },
     {
-        id:14, img:"./assets/img/img14.jpg", name:"Sillones Ingleses Estilo Windsor", Category:"sillones", price:"400",txt: text,  
+        id:14, img:"./assets/img/14.jpg", name:"Vasos (adelante) ",txt: "La 25 | cjs | Sumo", Category:"vaso", price:"1.000 c/u", 
     },
     {
-        id:15, img:"./assets/img/img15.jpg", name:"Mesa Oval Estilo Frances Luis XV", Category:"mesa", price:"780",txt: text,  
+        id:15, img:"./assets/img/7.jpg", name:"Vasos (atrás) ",txt: "Tallado a mano", Category:"vaso", price:"1.000 c/u", 
     },
     {
-        id:16, img:"./assets/img/img16.jpg", name:"Antiguos Sillones Luis XVI", Category:"sillones", price:"1000",txt: text,  
+        id:16, img:"./assets/img/11.jpg", name:"Frasco (adelante) ",txt: "La renga, PR", Category:"frasco", price:"500 c/u", 
     },
     {
-        id:17, img:"./assets/img/img17.jpg", name:"Escritorio Estilo Frances Luis XVI", Category:"escritorio", price:"580",txt: text,  
+        id:17, img:"./assets/img/19.jpg", name:"Frasco (atrás) ",txt: "La renga, PR", Category:"frasco", price:"500 c/u", 
     },
     {
-        id:18, img:"./assets/img/img18.jpg", name:"Antiguas Sillas Victoriana para jardín", Category:"sillas", price:"350",txt: text,  
+        id:18, img:"./assets/img/4.jpg", name:"Porta dni/sube/tarjetas ",txt: "cuerina (adelante)", Category:"portaDni", price:"300/400 c/u", 
     },
     {
-        id:19, img:"./assets/img/img19.jpg", name:"Mesa Estilo Frances Luis XV para centro", Category:"mesa", price:"450",txt: text,  
+        id:12, img:"./assets/img/12.jpg", name:"Porta dni/sube/tarjetas ",txt: "cuerina (atrás)", Category:"portaDni", price:"300/400 c/u", 
     },
-    {
-        id:20, img:"./assets/img/img20.jpg", name:"Sillas Federales Americanas", Category:"sillas", price:"400",txt: text,  
-    },
-    {
-        id:21, img:"./assets/img/img21.jpg", name:"Sillón Marquise Estilo Frances Luis XVI", Category:"sillones", price:"280",txt: text,  
-    },
-    {
-        id:22, img:"./assets/img/img22.jpg", name:"Sofá Frances de Estilo Imperio", Category:"sofa", price:"250",txt: text,  
-    },
-    {
-        id:23, img:"./assets/img/img23.jpg", name:"Chaise Longue Estilo Inglés", Category:"sillones", price:"250",txt: text,  
-    },
-    {
-        id:24, img:"./assets/img/img24.jpg", name:"Sopera de Plata Francesa", Category:"objetos", price:"130",txt: text,  
-    },
-    {
-        id:25, img:"./assets/img/img25.jpg", name:"Pava Colonial siglo XVI", Category:"objetos", price:"350",txt: text,  
-    },
-    // {
-        // id:21, img:"./assets/img/img21.jpg", name:"Sillón Marquise Estilo Frances Luis XVI", Category:"sillones", price:"250"
-    // },
+ 
 ]
 
 
@@ -101,6 +81,8 @@ const appState={
     activeFilter: null
 
 }
+
+
 
 
 
