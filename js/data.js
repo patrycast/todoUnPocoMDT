@@ -1,7 +1,7 @@
 
 const productsData=[
     {
-        id:1, img:"./assets/img/21.jpg", name:"Aire Acondicionado " ,txt: "2300 frigorias",  Category:"aireAcondicionado", price:"250.000", 
+        id:1, img:"./assets/img/21.avif", name:"Aire Acondicionado " ,txt: "2300 frigorias",  Category:"aireAcondicionado", price:"250.000", 
     },
     {
         id:2, img:"./assets/img/20.jpg", name:"Aire Acondicionado",txt: "Especificaciones",  Category:"aireAcondicionado", price:"250.000",  
@@ -16,13 +16,13 @@ const productsData=[
         id:5, img:"./assets/img/16.jpg", name:"Campera de Cuero",txt: " con corderito Talle S", Category:"camperas", price:"25.000", 
     },
     {
-        id:6, img:"./assets/img/3.jpg", name:"Remera Viejas Locas",txt: "pintada a mano Talle L", Category:"remera", price:"4.000",  
+        id:6, img:"./assets/img/3.avif", name:"Remera Viejas Locas",txt: "pintada a mano Talle L", Category:"remera", price:"4.000",  
     },
     {
-        id:7, img:"./assets/img/1.jpg", name:"Remera PR",txt: "pintada a mano Talle S", Category:"remera", price:"3.000", 
+        id:7, img:"./assets/img/1.avif", name:"Remera PR",txt: "pintada a mano Talle S", Category:"remera", price:"3.000", 
     },
     {
-        id:8, img:"./assets/img/2.jpg", name:"Remera INDIO",txt: "pintada a mano Talle S", Category:"remera", price:"2.800",  
+        id:8, img:"./assets/img/2.avif", name:"Remera INDIO",txt: "pintada a mano Talle S", Category:"remera", price:"2.800",  
     },
     {
         id:9, img:"./assets/img/5.jpg", name:"Remera Rolling Stone",txt: "pintada a mano Talle S",  Category:"remera", price:"2.800",
@@ -34,7 +34,7 @@ const productsData=[
         id:11, img:"./assets/img/15.jpg", name:"chop Don Osvaldo",txt: "Tallado a mano", Category:"chop", price:"2.500", 
     },
     {
-        id:12, img:"./assets/img/chop4.jpg", name:"chop La Renga",txt: "Tallado a mano", Category:"chop", price:"2.500", 
+        id:12, img:"./assets/img/chop4.avif", name:"chop La Renga",txt: "Tallado a mano", Category:"chop", price:"2.500", 
     },
     {
         id:13, img:"./assets/img/17.jpg", name:"chop PR",txt: "Tallado a mano", Category:"chop", price:"2.500", 
