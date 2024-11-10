@@ -20,7 +20,7 @@ const createProductTemplate=(producto)=>{
     <div class="muebles__container">
         <div class="card__muebles">
             <div class="mueble__img">
-                <img src="${img}" alt="${name}">
+                <img loading="lazy" src="${img}" alt="${name}">
             </div>
             <p>${name}</p>
             <small>${txt}</small>
