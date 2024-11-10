@@ -580,49 +580,6 @@ header{
       transform: translateX(20px) translateY(0) rotate(12deg); 
     }
   }
-@media(max-width:420px){
-
-  .txtContact {
-    /* width: 97%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:10px;
-  }
-  .card__muebles .mueble__img:hover{
-    transform: scale(1.2);
-     
-}  
-}
-
-
-/* Ícono de WhatsApp */
-.fab {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    background-color: #25d366;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 220px;
-    bottom: 20px;
-    text-align: center;
-    font-size: 28px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    z-index: 4;
-}
-.fab:hover {
-    background-color: #128c7e;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-.fab i {
-    color: white;
-}
 
 
 /* footer */
@@ -634,7 +591,7 @@ header{
     width:100%;
     height: 80px;
     background-color:var(--bg_header);
-    background-color: #2a2727;
+    background-color: #2a2727; border:2px solid red;
 }
 .footer .footer_text{
     display:flex;
@@ -650,7 +607,52 @@ header{
 }
 
 
+/* Ícono de WhatsApp */
+
+.fab {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 100px;
+    bottom: 20px;
+    text-align: right;
+    font-size: 28px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 4;
+}
+.fab:hover {
+    background-color: #128c7e;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.fab i {
+    color: white;
+}
 
 
+@media(max-width:420px){
 
+    .txtContact {
+      /* width: 97%; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:10px;
+    }
+    .card__muebles .mueble__img:hover{
+      transform: scale(1.2);
+       
+  }  
+  
+  .fab {
+      right: 0;
+  }
+}  
 
