@@ -64,7 +64,7 @@ const productsData=[
         id:21, img:"./assets/img/lu3.jpg", name:"Ventilador de Techo ",txt: "4 Aspas", Category:"electricidad", price:"30.000", 
     },
     {
-        id:22, img:"./assets/img/lu4.jpg", name:"Ventilador de Techo ",txt: "4 Aspas", Category:"electricidad", price:"25.000", 
+        id:22, img:"./assets/img/lu4.jpg", name:"Ventilador de Techo ",txt: "4 Aspas", Category:"electricidad", price:"28.000", 
     },
       {
         id:23, img:"./assets/img/lu1.avif", name:"Juego de Luces ",txt: "(x 3)", Category:"electricidad", price:"3.500", 
