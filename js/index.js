@@ -125,18 +125,6 @@ const closeMenuCart = () => {
 }
 
 
-//funcion integradora
-const modifyCartState= ()=>{
-    // jsonCart()
-    // cartTotal()
-    renderCart()
-    // showTotal()
-    // renderBadge()
-    // disableButton(buyBtn)
-    // disableButton(emptyCart)
-}
-
-
 const init = () => {
     renderProducts(appState.products[0]);
     showMoreBtn.addEventListener("click", showMoreProducts);
@@ -145,8 +133,6 @@ const init = () => {
     menuBtn.addEventListener("click", switchMenu);
     overlay.addEventListener("click", closeMenuCart);
     window.addEventListener("scroll", closeMenuCart);
-
-    document.addEventListener("DOMContentLoaded", renderCart);
     renderBadge(cart);
 }
 
