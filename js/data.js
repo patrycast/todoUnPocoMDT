@@ -1,7 +1,7 @@
 
 const productsData=[
     {
-        id:1, img:"./assets/img/21.avif", name:"Aire Acondicionado " ,txt: "2300 frigorias",  Category:"aireAcondicionado", price:"250.000", 
+        id:1, img:"./assets/img/21.jpg", name:"Aire Acondicionado " ,txt: "2300 frigorias",  Category:"aireAcondicionado", price:"250.000", 
     },
     {
         id:2, img:"./assets/img/20.jpg", name:"Aire Acondicionado",txt: "Especificaciones",  Category:"aireAcondicionado", price:"250.000",  
@@ -37,25 +37,40 @@ const productsData=[
         id:12, img:"./assets/img/chop4.avif", name:"chop La Renga",txt: "Tallado a mano", Category:"chop", price:"2.500", 
     },
     {
-        id:13, img:"./assets/img/17.jpg", name:"chop PR",txt: "Tallado a mano", Category:"chop", price:"2.500", 
+        id:13, img:"./assets/img/alum1.avif", name:"chop PR",txt: "Tallado a mano", Category:"chop", price:"7.000", 
     },
     {
-        id:14, img:"./assets/img/14.jpg", name:"Vasos (adelante) ",txt: "La 25 | cjs | Sumo", Category:"vaso", price:"1.000 c/u", 
+        id:14, img:"./assets/img/17.jpg", name:"chop PR",txt: "Tallado a mano", Category:"chop", price:"2.500", 
     },
     {
-        id:15, img:"./assets/img/7.jpg", name:"Vasos (atrás) ",txt: "Tallado a mano", Category:"vaso", price:"1.000 c/u", 
+        id:15, img:"./assets/img/14.jpg", name:"Vasos (adelante) ",txt: "La 25 | cjs | Sumo", Category:"vaso", price:"1.000 c/u", 
     },
     {
-        id:16, img:"./assets/img/11.jpg", name:"Frasco (adelante) ",txt: "La renga, PR", Category:"frasco", price:"500 c/u", 
+        id:16, img:"./assets/img/7.jpg", name:"Vasos (atrás) ",txt: "Tallado a mano", Category:"vaso", price:"1.000 c/u", 
     },
     {
-        id:17, img:"./assets/img/19.jpg", name:"Frasco (atrás) ",txt: "La renga, PR", Category:"frasco", price:"500 c/u", 
+        id:17, img:"./assets/img/11.jpg", name:"Frasco (adelante) ",txt: "La renga, PR", Category:"frasco", price:"500 c/u", 
     },
     {
-        id:18, img:"./assets/img/4.jpg", name:"Porta dni/sube/tarjetas ",txt: "cuerina (adelante)", Category:"portaDni", price:"300/400 c/u", 
+        id:18, img:"./assets/img/19.jpg", name:"Frasco (atrás) ",txt: "La renga, PR", Category:"frasco", price:"500 c/u", 
     },
     {
-        id:12, img:"./assets/img/12.jpg", name:"Porta dni/sube/tarjetas ",txt: "cuerina (atrás)", Category:"portaDni", price:"300/400 c/u", 
+        id:19, img:"./assets/img/4.jpg", name:"Porta dni/sube/tarjetas ",txt: "cuerina (adelante)", Category:"portaDni", price:"300/400 c/u", 
+    },
+    {
+        id:20, img:"./assets/img/12.jpg", name:"Porta dni/sube/tarjetas ",txt: "cuerina (atrás)", Category:"portaDni", price:"300/400 c/u", 
+    },
+    {
+        id:21, img:"./assets/img/lu3.jpg", name:"Ventilador de Techo ",txt: "4 Aspas", Category:"electricidad", price:"30.000", 
+    },
+    {
+        id:22, img:"./assets/img/lu4.jpg", name:"Ventilador de Techo ",txt: "4 Aspas", Category:"electricidad", price:"25.000", 
+    },
+      {
+        id:23, img:"./assets/img/lu1.avif", name:"Juego de Luces ",txt: "(x 3)", Category:"electricidad", price:"3.500", 
+    },
+    {
+        id:24, img:"./assets/img/lu2.jpg", name:"Juego de Luces ",txt: "(x 2)", Category:"electricidad", price:"2.500", 
     },
  
 ]
