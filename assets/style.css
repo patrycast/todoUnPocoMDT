@@ -244,7 +244,7 @@ header{
     max-width:1000px;
     margin-top: 90px;
     position: absolute; 
-    top: 30%; 
+    top:40%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     font-size: 4rem; 
@@ -268,7 +268,7 @@ header{
 
 .portada .description{
     position: absolute; 
-    top: 40%; 
+    top: 50%; 
     left: 6%; 
     /* margin: 0 20px; */
     color: rgb(247, 247, 247);
