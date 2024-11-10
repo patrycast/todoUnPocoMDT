@@ -72,6 +72,9 @@ const productsData=[
     {
         id:24, img:"./assets/img/lu2.jpg", name:"Juego de Luces ",txt: "(x 2)", Category:"electricidad", price:"2.500", 
     },
+    {
+        id:25, img:"./assets/img/lu5.jpg", name:"Lampara de Techo ",txt: "", Category:"electricidad", price:"4.000", 
+    },
  
 ]
 
