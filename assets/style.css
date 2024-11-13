@@ -593,17 +593,25 @@ header{
     background-color:var(--bg_header);
     background-color: #2a2727; 
 }
-.footer .footer_text{
+.footer .footer_text, .footer__A{
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     background: linear-gradient(90deg, #ce8282 0%, rgb(169, 10, 10));
     color:transparent;
     background-clip: text;
     filter: brightness(150%);
     padding: 0 20px ;
+    transition: all 2s ease;
+}
+.footer__A:hover{
+    color: rgb(56, 8, 132);
+    text-decoration: underline; 
+    cursor: pointer;
+    transition: all 2s ease;
+      
 }
 
 

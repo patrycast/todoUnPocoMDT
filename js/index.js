@@ -72,7 +72,6 @@ const changeColorActive=(activeFilter)=> {
 const changeFilter=(btn)=>{
     appState.activeFilter=btn.dataset.category
     changeColorActive(appState.activeFilter)
-    console.log(appState)
     if(!appState.activeFilter){
         showMoreBtn.classList.remove("hidden");
         return;
