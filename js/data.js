@@ -1,19 +1,19 @@
 
 const productsData=[
     {
-        id:1, img:"./assets/img/21.jpg", name:"Aire Acondicionado " ,txt: "2300 frigorias",  Category:"aireAcondicionado", price:"250.000", 
+        id:1, img:"./assets/img/21.avif", name:"Aire Acondicionado " ,txt: "2300 frigorias",  Category:"aireAcondicionado", price:"250.000", 
     },
     {
-        id:2, img:"./assets/img/20.jpg", name:"Aire Acondicionado",txt: "Especificaciones",  Category:"aireAcondicionado", price:"250.000",  
+        id:2, img:"./assets/img/20.avif", name:"Aire Acondicionado",txt: "Especificaciones",  Category:"aireAcondicionado", price:"250.000",  
     },
     {
-        id:3, img:"./assets/img/18.jpg", name:"Campera de Jeans", txt: "Talle S",  Category:"camperas", price:"10.000",  
+        id:3, img:"./assets/img/18.avif", name:"Campera de Jeans", txt: "Talle S",  Category:"camperas", price:"10.000",  
     },
     {
-        id:4, img:"./assets/img/10.jpg", name:"Campera de Cuero",txt: " con cinto Talle S", Category:"camperas", price:"28.000",
+        id:4, img:"./assets/img/10.avif", name:"Campera de Cuero",txt: " con cinto Talle S", Category:"camperas", price:"28.000",
     },
     {
-        id:5, img:"./assets/img/16.jpg", name:"Campera de Cuero",txt: " con corderito Talle S", Category:"camperas", price:"25.000", 
+        id:5, img:"./assets/img/16.avif", name:"Campera de Cuero",txt: " con corderito Talle S", Category:"camperas", price:"25.000", 
     },
     {
         id:6, img:"./assets/img/3.avif", name:"Remera Viejas Locas",txt: "pintada a mano Talle L", Category:"remera", price:"4.000",  
@@ -25,10 +25,10 @@ const productsData=[
         id:8, img:"./assets/img/2.avif", name:"Remera INDIO",txt: "pintada a mano Talle S", Category:"remera", price:"2.800",  
     },
     {
-        id:9, img:"./assets/img/5.jpg", name:"Remera Rolling Stone",txt: "pintada a mano Talle S",  Category:"remera", price:"2.800",
+        id:9, img:"./assets/img/5.avif", name:"Remera Rolling Stone",txt: "pintada a mano Talle S",  Category:"remera", price:"2.800",
     },
     {
-        id:10, img:"./assets/img/6.jpg", name:"Remera Rolling Stone",txt: " Talle S", Category:"remera", price:"3-000", 
+        id:10, img:"./assets/img/6.avif", name:"Remera Rolling Stone",txt: " Talle S", Category:"remera", price:"3-000", 
     },
     {
         id:11, img:"./assets/img/15.jpg", name:"chop Don Osvaldo",txt: "Tallado a mano", Category:"chop", price:"2.500", 
@@ -55,10 +55,10 @@ const productsData=[
         id:18, img:"./assets/img/19.jpg", name:"Frasco (atrás) ",txt: "La renga, PR", Category:"frasco", price:"500 c/u", 
     },
     {
-        id:19, img:"./assets/img/4.jpg", name:"Porta dni/sube/tarjetas ",txt: "cuerina (adelante)", Category:"portaDni", price:"300/400 c/u", 
+        id:19, img:"./assets/img/4.avif", name:"Porta dni/sube/tarjetas ",txt: "cuerina (adelante)", Category:"portaDni", price:"300/400 c/u", 
     },
     {
-        id:20, img:"./assets/img/12.jpg", name:"Porta dni/sube/tarjetas ",txt: "cuerina (atrás)", Category:"portaDni", price:"300/400 c/u", 
+        id:20, img:"./assets/img/12.avif", name:"Porta dni/sube/tarjetas ",txt: "cuerina (atrás)", Category:"portaDni", price:"300/400 c/u", 
     },
     {
         id:21, img:"./assets/img/lu3.jpg", name:"Ventilador de Techo ",txt: "4 Aspas", Category:"electricidad", price:"30.000", 
