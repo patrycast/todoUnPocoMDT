@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo un Poco</title>
     <link rel="icon" href="./assets/img/tup.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <link rel="stylesheet" href="./assets/style.css">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/mediaquery.css"> -->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <header>
-       <ul>
-        <li><a href="#portada"> <img  class="logo" src="./assets/img/logo.jpg" alt="logo" loading="lazy">
-        </a></li>
+        <ul>
+            <li><a href="#portada"> <img  class="logo" src="./assets/img/logo.jpg" alt="logo" loading="lazy"></a></li>
        </ul>
 
 
@@ -21,6 +21,7 @@
             <div class="menu-label">
                 <i class="fa-solid fa-bars"></i>
             </div>
+            
 
             <ul class="navbar-ul">
                 <li><a href="#portada">Inicio</a></li>
@@ -33,7 +34,9 @@
 
     <main>
         <section class="portada" id="portada">
-            <video autoplay muted loop><source src="./assets/img/portada.mp4" type="video/mp4"></video>
+            <video autoplay muted loop preload="metadata">
+                <source src="./assets/img/portada.mp4" type="video/mp4">
+            </video>
             <p>Todo Un Poco MDT</p>
             <div class="description">Venta de Usados | pintada en tela y cuerina a mano | tallado en vidrio a mano  </div>
            
@@ -84,8 +87,9 @@
     </main>
  
     <footer class="footer">
+        <div class="footerContainer">
         <p class="footer_text">© 2024 <a class="footer__A" target="_blank" rel="noopener noreferrer" href="https://beacons.ai/patriciacastillo">Patry la Moro<a>| &nbsp; Desarrolladora y Diseñadora Web.  Todos los derechos reservados</p>
-
+        </div>
         
         <div class="wsp">
             <a href="https://wa.me/5491155688587" class="fab" target="_blank" aria-label="Contáctanos por WhatsApp" aria-label="Contáctanos por WhatsApp">

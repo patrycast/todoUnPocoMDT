@@ -12,8 +12,6 @@ const overlay= document.querySelector(".overlay");
 const addModal= document.querySelector(".modal");
 
 
-
-//template
 const createProductTemplate=(producto)=>{
     const {id,name, img, price, txt}= producto
     return `
@@ -95,6 +93,8 @@ const addFilter=(e)=>{
 }
 
 
+
+
 //-----logica menu
 
 
@@ -124,11 +124,11 @@ const closeMenuCart = () => {
 }
 
 
+
 const init = () => {
     renderProducts(appState.products[0]);
     showMoreBtn.addEventListener("click", showMoreProducts);
     categories.addEventListener("click", addFilter);
-
     menuBtn.addEventListener("click", switchMenu);
     overlay.addEventListener("click", closeMenuCart);
     window.addEventListener("scroll", closeMenuCart);

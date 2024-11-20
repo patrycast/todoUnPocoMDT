@@ -37,10 +37,10 @@ const productsData=[
         id:12, img:"./assets/img/chop4.avif", name:"chop La Renga",txt: "Tallado a mano", Category:"chop", price:"2.500", 
     },
     {
-        id:13, img:"./assets/img/alum1.avif", name:"chop PR",txt: "Tallado a mano", Category:"chop", price:"7.000", 
+        id:13, img:"./assets/img/17.jpg", name:"chop PR",txt: "Tallado a mano", Category:"chop", price:"2.500", 
     },
     {
-        id:14, img:"./assets/img/17.jpg", name:"chop PR",txt: "Tallado a mano", Category:"chop", price:"2.500", 
+        id:14, img:"./assets/img/alum1.avif", name:"chop PR",txt: "Tallado a mano", Category:"chop", price:"7.000", 
     },
     {
         id:15, img:"./assets/img/14.jpg", name:"Vasos (adelante) ",txt: "La 25 | cjs | Sumo", Category:"vaso", price:"1.000 c/u", 
