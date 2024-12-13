@@ -462,7 +462,7 @@ header{
         height: 100%;
         border-radius: 4px;
         transition: transform 0.3s ease, box-shadow 2s ease; 
-         
+        object-fit: contain;
     }   
     .card__muebles .mueble__img img:hover{
         transform: scale(1.1);
